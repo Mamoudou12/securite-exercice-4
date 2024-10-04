@@ -4,6 +4,9 @@ import jwt from "jsonwebtoken";
 
 const app = express();
 
+// Ajoute le middleware pour lire les données JSON dans le corps des requêtes
+app.use(express.json());
+
 const PORT = 3020;
 const users = [
   {
